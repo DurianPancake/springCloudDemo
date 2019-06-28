@@ -7,7 +7,7 @@ spring:
       server:
         git:
           uri: https://github.com/DurianPancake/springCloudDemo
-          searchPaths: spconfig
+          searchPaths: sp-config
           #username: your-username
           #password: your-password
 
