@@ -1,0 +1,7 @@
+spring:
+  cloud:
+    inetutils:
+      ignored-interfaces:
+        - vm.*
+#      preferred-networks:
+#        - 192.168.0
