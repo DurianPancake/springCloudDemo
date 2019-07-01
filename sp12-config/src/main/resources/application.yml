@@ -10,6 +10,11 @@ spring:
           searchPaths: sp-config
           #username: your-username
           #password: your-password
+  rabbitmq:
+    host: 192.168.192.131
+    port: 5672
+    username: admin
+    password: admin
 
 server:
   port: 6001
@@ -22,3 +27,8 @@ eureka:
     prefer-ip-address: true
     instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
 
+management:
+  endpoints:
+    web:
+      exposure:
+        include: bus-refresh
